@@ -1,0 +1,64 @@
+create table score(
+    scoreid int(255) not null AUTO_INCREMENT primary key,
+    projectid int(255),
+    score1 varchar(255),
+    score2 varchar(255),
+    score3 varchar(255),
+    score4 varchar(255),
+    score5 varchar(255),
+    score6 varchar(255),
+    score7 varchar(255),
+    scoreoverall varchar(255),
+    FOREIGN KEY (projectid) REFERENCES project(projectid)
+	);    
+
+alter table score
+add FOREIGN KEY(projectid) 
+        REFERENCES project(projectid)
+        ON DELETE CASCADE;
+
+INSERT INTO `score` (`scoreid`, `projectid`, `score1`, `score2`, `score3`, `score4`, `score5`, `score6`, `score7`, `scoreoverall`) VALUES ('1', '43211', '65', '28', '40', '20', '19', '23', '67', '262');
+INSERT INTO `score` (`scoreid`, `projectid`, `score1`, `score2`, `score3`, `score4`, `score5`, `score6`, `score7`, `scoreoverall`) VALUES ('2', '76544', '70', '20', '40', '22', '21', '22', '56', '251'), ('3', '98766', '89', '27', '41', '24', '21', '27', '70', '299');
+
+
+SELECT project.projectid, score.score1, score.score2, score.score3, score.score4, score.score5, score.score6, score.score7, score.scoreoverall FROM project LEFT JOIN score ON project.projectid=score.projectid
+
+WHERE scoreid = (
+        SELECT MAX(scoreid)
+        FROM score)
+
+ORDER BY score.scoreid DESC;
+
+
+latest select query untuk view project evaluation
+
+SELECT project.projectid, score.score1, score.score2, score.score3, score.score4, score.score5, score.score6, score.score7, score.scoreoverall FROM project LEFT JOIN score 
+ON project.projectid=score.projectid 
+where score.scoreid in (select max(score.scoreid) from score group by score.projectid)
+ORDER BY score.scoreid asc;
+
+
+SELECT project.projectid, score.score1, score.score2, score.score3, score.score4, score.score5, score.score6, score.score7, score.scoreoverall FROM project LEFT JOIN score 
+ON project.projectid=score.projectid 
+where score.scoreid in (select max(score.scoreid) from score group by score.projectid)
+and score.projectid is not null
+ORDER BY score.scoreid asc;
+
+
+
+summary table
+create table summary(
+    summaryid int(255) not null AUTO_INCREMENT primary key,
+    infocrldid int(255) 
+    )
+
+alter table summary
+add FOREIGN KEY(infocrldid) 
+        REFERENCES infocrld(infocrldid)
+        ON DELETE CASCADE;
+
+ALTER TABLE summary
+ADD projectid int(255);
+
+
+select score.projectid, score.score1, score.score2, score.score3, score.score4, score.score5, score.score6, score.score7, score.scoreoverall, infocrld.level, infocrld.definition, infocrld.infocrldid from score join infocrld on score.infocrldid = inforcrld.infocrldid

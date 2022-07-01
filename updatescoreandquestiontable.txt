@@ -1,0 +1,86 @@
+ALTER TABLE score
+ADD percent varchar(5000);
+
+
+
+
+
+
+ALTER TABLE question
+ADD no int(255);
+
+UPDATE `question` SET `no` = '1' WHERE `question`.`questionid` = 1; 
+UPDATE `question` SET `no` = '2' WHERE `question`.`questionid` = 2; 
+UPDATE `question` SET `no` = '3' WHERE `question`.`questionid` = 3; 
+UPDATE `question` SET `no` = '4' WHERE `question`.`questionid` = 4; 
+UPDATE `question` SET `no` = '5' WHERE `question`.`questionid` = 5; 
+UPDATE `question` SET `no` = '6' WHERE `question`.`questionid` = 6; 
+UPDATE `question` SET `no` = '7' WHERE `question`.`questionid` = 7; 
+UPDATE `question` SET `no` = '8' WHERE `question`.`questionid` = 8; 
+UPDATE `question` SET `no` = '9' WHERE `question`.`questionid` = 9; 
+UPDATE `question` SET `no` = '10' WHERE `question`.`questionid` = 10;
+
+UPDATE `question` SET `no` = '11' WHERE `question`.`questionid` = 11; 
+UPDATE `question` SET `no` = '12' WHERE `question`.`questionid` = 12; 
+UPDATE `question` SET `no` = '13' WHERE `question`.`questionid` = 13; 
+UPDATE `question` SET `no` = '14' WHERE `question`.`questionid` = 14; 
+UPDATE `question` SET `no` = '15' WHERE `question`.`questionid` = 15; 
+UPDATE `question` SET `no` = '16' WHERE `question`.`questionid` = 16; 
+UPDATE `question` SET `no` = '17' WHERE `question`.`questionid` = 17; 
+UPDATE `question` SET `no` = '18' WHERE `question`.`questionid` = 18; 
+UPDATE `question` SET `no` = '19' WHERE `question`.`questionid` = 19; 
+UPDATE `question` SET `no` = '20' WHERE `question`.`questionid` = 20;
+
+
+UPDATE `question` SET `no` = '21' WHERE `question`.`questionid` = 21; 
+UPDATE `question` SET `no` = '22' WHERE `question`.`questionid` = 22; 
+UPDATE `question` SET `no` = '23' WHERE `question`.`questionid` = 23; 
+UPDATE `question` SET `no` = '24' WHERE `question`.`questionid` = 24; 
+UPDATE `question` SET `no` = '25' WHERE `question`.`questionid` = 25;
+UPDATE `question` SET `no` = '26' WHERE `question`.`questionid` = 26; 
+UPDATE `question` SET `no` = '27' WHERE `question`.`questionid` = 27; 
+UPDATE `question` SET `no` = '28' WHERE `question`.`questionid` = 28; 
+UPDATE `question` SET `no` = '29' WHERE `question`.`questionid` = 29; 
+UPDATE `question` SET `no` = '30' WHERE `question`.`questionid` = 30;
+
+
+UPDATE `question` SET `no` = '31' WHERE `question`.`questionid` = 31; 
+UPDATE `question` SET `no` = '32' WHERE `question`.`questionid` = 32; 
+UPDATE `question` SET `no` = '33' WHERE `question`.`questionid` = 33; 
+UPDATE `question` SET `no` = '34' WHERE `question`.`questionid` = 34; 
+UPDATE `question` SET `no` = '35' WHERE `question`.`questionid` = 35; 
+UPDATE `question` SET `no` = '36' WHERE `question`.`questionid` = 36; 
+UPDATE `question` SET `no` = '37' WHERE `question`.`questionid` = 37; 
+UPDATE `question` SET `no` = '38' WHERE `question`.`questionid` = 38; 
+UPDATE `question` SET `no` = '39' WHERE `question`.`questionid` = 39; 
+UPDATE `question` SET `no` = '40' WHERE `question`.`questionid` = 40;
+
+
+UPDATE `question` SET `no` = '41' WHERE `question`.`questionid` = 41; 
+UPDATE `question` SET `no` = '42' WHERE `question`.`questionid` = 42; 
+UPDATE `question` SET `no` = '43' WHERE `question`.`questionid` = 43; 
+UPDATE `question` SET `no` = '44' WHERE `question`.`questionid` = 44; 
+UPDATE `question` SET `no` = '45' WHERE `question`.`questionid` = 45; 
+UPDATE `question` SET `no` = '46' WHERE `question`.`questionid` = 46; 
+UPDATE `question` SET `no` = '47' WHERE `question`.`questionid` = 47; 
+UPDATE `question` SET `no` = '48' WHERE `question`.`questionid` = 48; 
+UPDATE `question` SET `no` = '49' WHERE `question`.`questionid` = 49; 
+UPDATE `question` SET `no` = '50' WHERE `question`.`questionid` = 50;
+
+UPDATE `question` SET `no` = '51' WHERE `question`.`questionid` = 51; 
+UPDATE `question` SET `no` = '52' WHERE `question`.`questionid` = 52; 
+UPDATE `question` SET `no` = '53' WHERE `question`.`questionid` = 53; 
+UPDATE `question` SET `no` = '54' WHERE `question`.`questionid` = 54; 
+UPDATE `question` SET `no` = '55' WHERE `question`.`questionid` = 55; 
+UPDATE `question` SET `no` = '56' WHERE `question`.`questionid` = 56; 
+UPDATE `question` SET `no` = '57' WHERE `question`.`questionid` = 57; 
+UPDATE `question` SET `no` = '58' WHERE `question`.`questionid` = 58; 
+UPDATE `question` SET `no` = '59' WHERE `question`.`questionid` = 59; 
+UPDATE `question` SET `no` = '60' WHERE `question`.`questionid` = 60; 
+UPDATE `question` SET `no` = '61' WHERE `question`.`questionid` = 61; 
+UPDATE `question` SET `no` = '62' WHERE `question`.`questionid` = 62; 
+UPDATE `question` SET `no` = '63' WHERE `question`.`questionid` = 63; 
+UPDATE `question` SET `no` = '64' WHERE `question`.`questionid` = 64;
+
+
+

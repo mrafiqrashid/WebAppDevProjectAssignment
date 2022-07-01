@@ -1,0 +1,6 @@
+INSERT INTO `project` (`projectid`, `projectname`, `owner`, `duration`, `mode`, `userid`) VALUES ('23455', 'Digging well', 'Reese Charles', '6 month', 'Insource', '4563'), ('98766', 'Building wooden house', 'Rahul Chandra', '9 month', 'Co-source', '4563'), ('43211', 'Building school', 'Muhammad Rashid bin Shamsul Kahar', '1 year 3 month', 'Outsource', '4563'), ('56477', 'House renovation', 'Sharina kay', '5 month', 'Unspecified', '4563'), 
+('76544', 'Building temple', 'Ong Ki Huat', '1 year', 'Outsource', '4563');
+
+
+
+UPDATE `question` SET `rating` = '1 = No</br>\r\n5 = Yes</br>' WHERE `question`.`questionid` = 13; UPDATE `question` SET `rating` = '1 = No</br>\r\n5 = Yes' WHERE `question`.`questionid` = 14; UPDATE `question` SET `rating` = '1 = No</br>\r\n5 = Yes' WHERE `question`.`questionid` = 16; UPDATE `question` SET `rating` = '1 = No</br>\r\n5 = Yes' WHERE `question`.`questionid` = 17; UPDATE `question` SET `rating` = '1 = No</br>\r\n5 = Yes' WHERE `question`.`questionid` = 18;
